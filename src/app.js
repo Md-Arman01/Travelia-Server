@@ -9,6 +9,7 @@ const packagesRoute = require('./routes/packages/index')
 const wishlistRoute = require('./routes/wishlist/index')
 const tourGuidesRoute = require('./routes/tourGuides/index')
 const singlePackageRoute = require('./routes/singlepackage/index')
+const bookingsRoute = require('./routes/Bookings/index')
 
 
 // middleware
@@ -24,6 +25,7 @@ app.use(singlePackageRoute)
 
 // post api
 app.use(wishlistRoute)
+app.use(bookingsRoute)
 
 // update api
 
