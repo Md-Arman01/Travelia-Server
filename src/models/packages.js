@@ -1,32 +1,32 @@
 const { model, Schema } = require("mongoose");
 
 const PackagesSchema = new Schema({
-  _id: {
+  "_id": {
     type: String,
   },
-  image: {
+  "image": {
     type: String,
     // required: true
   },
-  tour_type: {
+  "tour_type": {
     type: String,
   },
-  trip_title: {
+  "trip_title": {
     type: String,
   },
-  about: {
+  "about": {
     type: String,
   },
-  day_1: {
+  "day_1": {
     type: String,
   },
-  day_2: {
+  "day_2": {
     type: String,
   },
-  day_3: {
+  "day_3": {
     type: String,
   },
-  price: {
+  "price": {
     type: Number,
   },
 });

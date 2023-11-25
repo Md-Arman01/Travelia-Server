@@ -6,6 +6,8 @@ const allErrorHandler = require('./utils/allErrorHandler')
 const applyMiddleware = require('./middleware/index')
 const connectDB = require('./db/connectDB')
 const packagesRoute = require('./routes/packages/index')
+const wishlistRoute = require('./routes/wishlist/index')
+const tourGuidesRoute = require('./routes/tourGuides/index')
 
 
 // middleware
@@ -15,6 +17,15 @@ applyMiddleware(app)
 
 // get api
 app.use(packagesRoute)
+app.use(tourGuidesRoute)
+
+// post api
+app.use(wishlistRoute)
+
+// update api
+
+// delete api
+
 
 
 

@@ -1,32 +1,22 @@
 const { model, Schema } = require("mongoose");
 
 const WishlistSchema = new Schema({
-  _id: {
+  "user_name": {
     type: String,
   },
-  image: {
-    type: String,
-    // required: true
-  },
-  tour_type: {
+  "user_email": {
     type: String,
   },
-  trip_title: {
+  "image": {
     type: String,
   },
-  about: {
+  "tour_type": {
     type: String,
   },
-  day_1: {
+  "trip_title": {
     type: String,
   },
-  day_2: {
-    type: String,
-  },
-  day_3: {
-    type: String,
-  },
-  price: {
+  "price": {
     type: Number,
   },
 });

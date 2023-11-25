@@ -1,5 +1,9 @@
+const allWishlist = require('../../api/wishlist/controller/allwishlist')
+
+
 const router = require('express').Router()
 
-router.get('/wishlist',)
+
+router.post('/wishlist', allWishlist)
 
 module.exports = router
