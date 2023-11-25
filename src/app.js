@@ -8,6 +8,7 @@ const connectDB = require('./db/connectDB')
 const packagesRoute = require('./routes/packages/index')
 const wishlistRoute = require('./routes/wishlist/index')
 const tourGuidesRoute = require('./routes/tourGuides/index')
+const singlePackageRoute = require('./routes/singlepackage/index')
 
 
 // middleware
@@ -18,6 +19,8 @@ applyMiddleware(app)
 // get api
 app.use(packagesRoute)
 app.use(tourGuidesRoute)
+app.use(singlePackageRoute)
+
 
 // post api
 app.use(wishlistRoute)

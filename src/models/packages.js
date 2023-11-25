@@ -1,9 +1,6 @@
 const { model, Schema } = require("mongoose");
 
 const PackagesSchema = new Schema({
-  "_id": {
-    type: String,
-  },
   "image": {
     type: String,
     // required: true

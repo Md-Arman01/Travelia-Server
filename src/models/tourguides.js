@@ -1,9 +1,6 @@
 const { model, Schema } = require("mongoose");
 
 const TourGuidesSchema = new Schema({
-  "_id": {
-    type: String,
-  },
   "provider_name": {
     type: String,
   },
