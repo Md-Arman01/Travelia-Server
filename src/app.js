@@ -5,10 +5,19 @@ const port = process.env.PORT || 5000;
 const allErrorHandler = require('./utils/allErrorHandler')
 const applyMiddleware = require('./middleware/index')
 const connectDB = require('./db/connectDB')
+const packagesRoute = require('./routes/packages/index')
 
 
-
+// middleware
 applyMiddleware(app)
+
+
+
+// get api
+app.use(packagesRoute)
+
+
+
 
 
 app.get("/health", (req, res) => {
