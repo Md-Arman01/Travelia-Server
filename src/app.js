@@ -13,6 +13,7 @@ const bookingsRoute = require('./routes/Bookings/index')
 const singleTourGuideRoute = require('./routes/singleTourGuide/index')
 const commentsRoute = require('./routes/Comments/index')
 const singleGuideCommentsRoute = require('./routes/SingelGuideComment/index')
+const allUsersRoute = require('./routes/AllUsers/index')
 
 
 // middleware
@@ -32,6 +33,7 @@ app.use(singleGuideCommentsRoute)
 app.use(wishlistRoute)
 app.use(bookingsRoute)
 app.use(commentsRoute)
+app.use(allUsersRoute)
 
 // update api
 
