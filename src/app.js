@@ -15,6 +15,7 @@ const commentsRoute = require('./routes/Comments/index')
 const singleGuideCommentsRoute = require('./routes/SingelGuideComment/index')
 const allUsersRoute = require('./routes/AllUsers/index')
 const userRoleRoute = require('./routes/UserRole/index')
+const allUsersGetRoute = require('./routes/AllUserGet/index')
 
 
 // middleware
@@ -29,6 +30,7 @@ app.use(singlePackageRoute)
 app.use(singleTourGuideRoute)
 app.use(singleGuideCommentsRoute)
 app.use(userRoleRoute)
+app.use(allUsersGetRoute)
 
 
 // post api
