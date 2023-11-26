@@ -13,6 +13,7 @@ const allBookings =  async(req, res)=>{
         user_image: bookingInfo.user_image,
         tour_type: bookingInfo.tour_type,
         trip_title: bookingInfo.trip_title,
+        status: bookingInfo.status,
     }
     const result = await Bookings.create(doc)
     res.send(result)

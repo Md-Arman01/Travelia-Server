@@ -25,6 +25,9 @@ const BookingsSchema = new Schema({
   "trip_title": {
     type: String,
   },
+  "status": {
+    type: String,
+  },
 });
 
 const Bookings = model("bookings", BookingsSchema);
