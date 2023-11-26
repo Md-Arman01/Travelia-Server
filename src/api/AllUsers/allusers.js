@@ -10,7 +10,6 @@ const allUsers = async (req, res) => {
   };
 
   const userExisting = await Users.find({ user_email: userInfo.user_email });
-  console.log(userExisting)
 
   if (userExisting.length > 0) {
     return res.send({ message: "user already exist" });
