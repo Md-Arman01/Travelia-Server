@@ -16,6 +16,7 @@ const singleGuideCommentsRoute = require('./routes/SingelGuideComment/index')
 const allUsersRoute = require('./routes/AllUsers/index')
 const userRoleRoute = require('./routes/UserRole/index')
 const allUsersGetRoute = require('./routes/AllUserGet/index')
+const updateUserRoleRoute = require('./routes/UpdateUserRole/index')
 
 
 // middleware
@@ -40,6 +41,8 @@ app.use(commentsRoute)
 app.use(allUsersRoute)
 
 // update api
+app.use(updateUserRoleRoute)
+
 
 // delete api
 
