@@ -17,7 +17,7 @@ const allUsersRoute = require('./routes/AllUsers/index')
 const userRoleRoute = require('./routes/UserRole/index')
 const allUsersGetRoute = require('./routes/AllUserGet/index')
 const updateUserRoleRoute = require('./routes/UpdateUserRole/index')
-
+const appPackageRoute = require('./routes/AddPackage/index')
 
 // middleware
 applyMiddleware(app)
@@ -39,6 +39,7 @@ app.use(wishlistRoute)
 app.use(bookingsRoute)
 app.use(commentsRoute)
 app.use(allUsersRoute)
+app.use(appPackageRoute)
 
 // update api
 app.use(updateUserRoleRoute)

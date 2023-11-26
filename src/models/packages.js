@@ -3,7 +3,6 @@ const { model, Schema } = require("mongoose");
 const PackagesSchema = new Schema({
   "image": {
     type: String,
-    // required: true
   },
   "tour_type": {
     type: String,
