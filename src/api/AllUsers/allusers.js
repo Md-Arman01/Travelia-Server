@@ -7,6 +7,10 @@ const allUsers = async (req, res) => {
     user_email: userInfo.user_email,
     user_image: userInfo.user_image,
     role: userInfo.role,
+    phone_number: userInfo.phone_number,
+    education: userInfo.education,
+    skills: userInfo.skills,
+    work_experience: userInfo.work_experience
   };
 
   const userExisting = await Users.find({ user_email: userInfo.user_email });

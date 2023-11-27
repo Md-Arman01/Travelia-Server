@@ -21,6 +21,8 @@ const appPackageRoute = require('./routes/AddPackage/index')
 const userBookingsRoute = require('./routes/UserBookings/index')
 const userWishListRoute = require('./routes/UserWishlist/index')
 const deleteWishlistRoute = require('./routes/DeleteWishlist/index')
+const makeTourGuideRoute = require('./routes/MakeTourGuide/index')
+const singleUserRoute = require('./routes/SingleUser/index')
 
 
 // middleware
@@ -38,6 +40,7 @@ app.use(userRoleRoute)
 app.use(allUsersGetRoute)
 app.use(userBookingsRoute)
 app.use(userWishListRoute)
+app.use(singleUserRoute)
 
 
 // post api
@@ -46,6 +49,7 @@ app.use(bookingsRoute)
 app.use(commentsRoute)
 app.use(allUsersRoute)
 app.use(appPackageRoute)
+app.use(makeTourGuideRoute)
 
 // update api
 app.use(updateUserRoleRoute)

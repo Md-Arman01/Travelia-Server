@@ -13,6 +13,18 @@ const UsersSchema = new Schema({
   "role": {
     type: String,
   },
+  "phone_number": {
+    type: String,
+  },
+  "education": {
+    type: String,
+  },
+  "skills": {
+    type: String,
+  },
+  "work_experience": {
+    type: String,
+  },
   
 });
 

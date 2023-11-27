@@ -11,7 +11,7 @@ const TourGuidesSchema = new Schema({
     type: String,
   },
   "phone_number": {
-    type: Number,
+    type: String,
   },
   "education": {
     type: String,
