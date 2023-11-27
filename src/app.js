@@ -18,6 +18,8 @@ const userRoleRoute = require('./routes/UserRole/index')
 const allUsersGetRoute = require('./routes/AllUserGet/index')
 const updateUserRoleRoute = require('./routes/UpdateUserRole/index')
 const appPackageRoute = require('./routes/AddPackage/index')
+const userBookingsRoute = require('./routes/UserBookings/index')
+
 
 // middleware
 applyMiddleware(app)
@@ -32,6 +34,7 @@ app.use(singleTourGuideRoute)
 app.use(singleGuideCommentsRoute)
 app.use(userRoleRoute)
 app.use(allUsersGetRoute)
+app.use(userBookingsRoute)
 
 
 // post api
