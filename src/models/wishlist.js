@@ -1,6 +1,9 @@
 const { model, Schema } = require("mongoose");
 
 const WishlistSchema = new Schema({
+  "package_id": {
+    type: String,
+  },
   "user_name": {
     type: String,
   },

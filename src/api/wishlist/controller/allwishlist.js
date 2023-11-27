@@ -3,9 +3,9 @@ const Wishlist = require("../../../models/wishlist");
 
 const allWishlist =  async(req, res)=>{
     const wishlistInfo = req.body;
-    console.log(wishlistInfo)
 
     const doc = {
+        package_id: wishlistInfo.package_id,
         user_name: wishlistInfo.user_name,
         user_email: wishlistInfo.user_email,
         image: wishlistInfo.image,
