@@ -27,6 +27,7 @@ const tourAssignBookingsRoute = require('./routes/TourAssignBooking/index')
 const updateBookingStatusRoute = require('./routes/BookingStatusChange/index')
 const deleteBookingRoute = require('./routes/DeleteBooking/index')
 const addStoryRoute = require('./routes/AddStory/index')
+const allstoryRoute = require('./routes/AllStory/index')
 
 
 // middleware
@@ -46,6 +47,7 @@ app.use(userBookingsRoute)
 app.use(userWishListRoute)
 app.use(singleUserRoute)
 app.use(tourAssignBookingsRoute)
+app.use(allstoryRoute)
 
 
 // post api
