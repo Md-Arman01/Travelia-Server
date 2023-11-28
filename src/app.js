@@ -35,6 +35,7 @@ const paymentIntentRoute = require('./routes/PaymentIntent/index')
 const addPaymentRoute = require('./routes/AddPayment/index')
 const specificPaymentRoute = require('./routes/SpeceficPayment/index')
 const galleryImageRoute = require('./routes/GalleryImage/index');
+const authenticationRoute = require('./routes/Authentication/index');
 
 // middleware
 applyMiddleware(app)
@@ -72,6 +73,7 @@ app.use(makeTourGuideRoute)
 app.use(addStoryRoute)
 app.use(paymentIntentRoute)
 app.use(addPaymentRoute)
+app.use(authenticationRoute)
 
 // update api
 app.use(updateUserRoleRoute)
