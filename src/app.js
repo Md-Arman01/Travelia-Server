@@ -33,6 +33,8 @@ const tourTypeRoute = require('./routes/TourType/index')
 const singleBookingRoute = require('./routes/SingleBookings/index')
 const paymentIntentRoute = require('./routes/PaymentIntent/index')
 const addPaymentRoute = require('./routes/AddPayment/index')
+const specificPaymentRoute = require('./routes/SpeceficPayment/index')
+const galleryImageRoute = require('./routes/GalleryImage/index');
 
 // middleware
 applyMiddleware(app)
@@ -55,6 +57,9 @@ app.use(allstoryRoute)
 app.use(singleStoryRoute)
 app.use(tourTypeRoute)
 app.use(singleBookingRoute)
+app.use(specificPaymentRoute)
+app.use(galleryImageRoute)
+
 
 
 // post api
