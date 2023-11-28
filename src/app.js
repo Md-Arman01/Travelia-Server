@@ -32,6 +32,7 @@ const singleStoryRoute = require('./routes/SingleStory/index')
 const tourTypeRoute = require('./routes/TourType/index')
 const singleBookingRoute = require('./routes/SingleBookings/index')
 const paymentIntentRoute = require('./routes/PaymentIntent/index')
+const addPaymentRoute = require('./routes/AddPayment/index')
 
 // middleware
 applyMiddleware(app)
@@ -65,6 +66,7 @@ app.use(appPackageRoute)
 app.use(makeTourGuideRoute)
 app.use(addStoryRoute)
 app.use(paymentIntentRoute)
+app.use(addPaymentRoute)
 
 // update api
 app.use(updateUserRoleRoute)
